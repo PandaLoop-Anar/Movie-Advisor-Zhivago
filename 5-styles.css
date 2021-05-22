@@ -1,0 +1,123 @@
+
+/**/
+#ulu {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    cursor: context-menu;
+}
+#lil {
+    display: inline-block;
+    list-style-type: none;
+    margin-right: 15px;
+    background-color: #ff8b80cc;
+    width: 8em;
+    height: 2em;
+    border-radius: 50px 10px;
+    text-align: center;
+    margin: 25px 10px 35px 10px;
+    padding: auto;
+    padding-top: 3px;
+    font-size: 120%;
+    color: black;
+    animation: peri 3s infinite ease-out;
+}
+@keyframes peri { 
+    0%{
+        background-color: rgba(100, 52, 233, 0.9);
+    }
+    17%{
+        background-color: rgb(44, 124, 229, 0.9);
+    }
+    33%{
+        background-color: rgb(73, 204, 92, 0.9);
+    }
+    50%{
+        background-color: rgb(248, 196, 33, 0.9);
+    }
+    66%{
+        background-color: rgb(251, 102, 64, 0.9);
+    }
+    83%{
+        background-color: rgb(248, 37, 83, 0.9);
+    }
+    100%{
+        background-color: rgb(226, 2, 6, 0.9);
+    }
+}
+#lil:hover {
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Oswald', sans-serif;
+    animation: brunva 3s infinite ease-in-out;
+}
+@keyframes brunva {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+/**/
+body {
+    background-color: #1c4150bb;
+}
+.logo {
+    border-radius: 20px;
+    margin-right: 10px;
+}
+#navbarSupportedContent {
+    margin-left: 10px;
+}
+.card-img-top {
+    cursor: pointer;
+}
+.jumbotron {
+    padding: 40px 32px!important;
+    background-color: #d8f0fc;
+}
+h1 {
+    margin: 35px;
+    text-align: center;
+    font-size: 65px;
+    font-family: 'Parisienne', cursive;
+    font-weight: bolder;
+    color: aliceblue;
+}
+h2 {
+    margin: 10px;
+    font-family: 'Parisienne', cursive;
+    font-size: 45px;
+    font-weight: bolder;
+}
+h6 {
+    color: black;
+}
+/**/
+footer {
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    background-color: rgb(26, 24, 24);
+    color: whitesmoke;
+    padding: 10px;
+    font-style: oblique;
+    margin-top: 10px;
+}
+footer h6 {
+    color: aliceblue;
+}
+@media only screen and (max-width: 575.98px) {
+    iframe {
+        width: 88vw;
+        height: 240px;
+    }
+}
+@media only screen and (min-width: 576px) and (max-width: 992px){
+    iframe {
+    width: 470px;
+    height: 265px;
+}
+}
